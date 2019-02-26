@@ -75,11 +75,6 @@ contract Medicine{
         return hmAdmin;
     }
     
-    function setSuperAdmin(address superAdmin1) public{
-        require(msg.sender == hmAdmin,"You are not authorized.");
-        hmAdmin = superAdmin1;
-    }
-    
     // Status Functions
     function getStatus()public view returns(uint){
         return status;
